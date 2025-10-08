@@ -1,6 +1,12 @@
+import Navbar from '@/components/layout/navbar'
+import Appshell from '@/components/layout/navbar/AppShell'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <Appshell>
+      <Component {...pageProps} />
+    </Appshell>
+  )
 }
