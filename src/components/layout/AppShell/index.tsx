@@ -1,8 +1,10 @@
-import Navbar from "..";
+import Navbar from "../navbar";
+
 
 type AppShellProps ={
     children: React.ReactNode
 }
+
 
 const Appshell = (props : AppShellProps) => {
     const { children } = props;
